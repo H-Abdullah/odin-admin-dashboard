@@ -1,2 +1,3 @@
-// ? Is this code correct
-console.log('Hello World');
+function buttclick () {
+  alert('Button clicked');
+}
