@@ -5,10 +5,87 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f5298cc69b.js" crossorigin="anonymous"></script>
   <script src="scripts.js" defer></script>
   <title>Admin Dashboard</title>
 </head>
 <body>
-
+  <div class="main-container grid">
+    <div class="sideboard grid">
+      <div class="dashboard grid">
+        <span><i class="fa-solid fa-table-columns fa-bounce fa-xl little-gap" style="color: #000000;"></i>Dashboard</span>
+      </div>
+      <div class="sideboard-link grid">
+        <ul class="link-container grid">
+          <li><i class="fa-solid fa-house little-gap"></i><a href="#" class="home">Home</a></li>
+          <li><i class="fa-solid fa-address-card little-gap"></i><a href="#" class="profile">Profile</a></li>
+          <li><i class="fa-solid fa-message little-gap"></i><a href="#" class="messages">Messages</a></li>
+          <li><i class="fa-solid fa-clock-rotate-left little-gap"></i><a href="#" class="history">History</a></li>
+          <li><i class="fa-solid fa-list-check little-gap"></i><a href="#" class="tasks">Tasks</a></li>
+          <li><i class="fa-solid fa-people-group fa-sm little-gap"></i><a href="#" class="communities">Communities</a></li>
+          <li></li> <!--*Empty cell for gap between Communities and Settings-->
+          <li><i class="fa-solid fa-gear little-gap"></i><a href="#" class="settings">Settings</a></li>
+          <li><i class="fa-solid fa-circle-info little-gap"></i><a href="#" class="support">Support</a></li>
+          <li><i class="fa-solid fa-user-shield fa-sm little-gap"></i><a href="#" class="privacy">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mainboard grid">
+      <div class="top-bar grid">
+        <form class='grid' action="#">
+          <label for="search-bar" class="search-label grid"><i class="fa-solid fa-magnifying-glass fa-lg"></i></label>
+          <input type="search" name="search-bar" id="search-bar">
+        </form>
+        <div></div><!--*Empty cell for gap between searchbar and items to the left-->
+        <button type="button" class="bell"><i class="fa-solid fa-bell fa-xl"></i></button>
+        <div class="profile-picture-top"><i class="fa-solid fa-user fa-2xl"></i></div>
+        <div class="username-top">Morgan Oakley</div>
+      </div>
+      <div class="below-top-bar grid">
+        <div class="profile-picture-below grid">
+          <i class="fa-solid fa-user fa-4x"></i>
+          <!-- <img src="#" alt="profile-picture" class="pfpb"> -->
+        </div>
+        <span class="greeting">Hi there,</span>
+        <h3 class="username-below">Morgan Oakley<span class="user-handle">@morgan</span></h3>
+        <button type="button" class="new">New</button>
+        <button type="button" class="upload">Upload</button>
+        <button type="button" class="share">Share</button>
+      </div>
+      <div class="big-bar grid">
+        <div class="projects grid">
+          <h3 class="projects-header">Your projects</h3>
+          <div class="projects-1">Super Cool Project</div>
+          <div class="projects-2">Less Cool Project</div>
+          <div class="projects-3">Impossible App</div>
+          <div class="projects-4">Easy Peasy App</div>
+          <div class="projects-5">Ad blocker</div>
+          <div class="projects-6">Money Maker</div>
+        </div>
+        <div class="announcements grid">
+          <h3 class="announcements-header grid">Announcements</h3>
+          <div class="announcement-1 grid">
+            <h3 class="header-1">Site Maintenance</h3>
+            <p class="content-1">Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna ... </p>
+          </div>
+          <div class="announcement-2 grid">
+            <h3 class="header-2">Community Share Day</h3>
+            <p class="content-2">Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna ... </p>
+          </div>
+          <div class="announcement-3 grid">
+            <h3 class="header-3">Updated Privacy Policy</h3>
+            <p class="content-3">Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna ... </p>
+          </div>
+        </div>
+        <div class="trending grid"></div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
